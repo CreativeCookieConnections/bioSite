@@ -5,7 +5,11 @@ File Name: styles.css
 */
 
 /* CSS Reset */
+<<<<<<< HEAD
 body, header, nav, main, footer, h1, div, img, ul, aside, figure, figcaption, section, article {
+=======
+body, header, nav, main, footer, h1, div, img, ul {
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
   margin: 0;
   padding: 0;
   border: 0;
@@ -35,11 +39,18 @@ header img {
 
 /* Style rules for navigation area */
 nav {
+<<<<<<< HEAD
   background-color: #bb4add;
   border: 3px solid #38b6ff;
   border-left: none;
   border-right: none;
   border-radius: 2%;
+=======
+  background-color: #e760ba;
+  border: 5px solid #38b6ff;
+  border-left: none;
+  border-right: none;
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
 }
 
 nav ul {
@@ -84,6 +95,7 @@ main {
 }
 
 main h1 {
+<<<<<<< HEAD
   color: #8fb0ee;
   text-shadow: 2px 2px 4px #8625ca;
   text-align: center;
@@ -135,6 +147,9 @@ figcaption {
   padding: 2%;
   border-top: 4px solid #8fb0ee;
   font-weight: bold;
+=======
+  color:#b81f85;
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
 }
 
 /* Style rules for footer content */
@@ -175,13 +190,20 @@ footer p {
     padding: 0.1em 0.75em;
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
   /* Tablet Viewport: Style rules for main content area */
   main {
     padding-bottom: 100%;
     border-top: 5px solid #38b6ff;
     border-bottom: 5px solid #38b6ff;
+<<<<<<< HEAD
     background: linear-gradient(to right, #38b6ff, #8fb0ee);
+=======
+    background: linear-gradient(to right, #e760ba, #d6b8e9);
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
     background-color: #ffd5ff;
     padding: 0 0 2% 0
   }
@@ -190,6 +212,7 @@ footer p {
     margin: 0 0 4% 10%;
   }
 
+<<<<<<< HEAD
   .grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -318,6 +341,20 @@ tr:nth-child(odd) {
   background-color: #d6b8e9;
 }
 
+=======
+  main h1 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #b81f85
+  }
+
+  #personal-goals, #accomplishments {
+    width: 30%;
+    float: left;
+    margin: 1% 9% 0 9%;
+  }
+
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
 }
 
 /* Media Query for Desktop Viewport */
@@ -350,17 +387,27 @@ tr:nth-child(odd) {
   }
 
   nav li a:hover {
+<<<<<<< HEAD
     color: #38b6ff;
+=======
+    color: #8625ca;
+    background-color: #ffd5ff;
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
   }
 
   /* Desktop Viewport: Style rules for main content */
   main {
     clear: left;
+<<<<<<< HEAD
     background: #8fb0ee;
+=======
+    background: #d6b8e9;
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
     padding-bottom: 2%;
   }
 
   main h1 {
+<<<<<<< HEAD
     font-size: 5em;
     color: #8fb0ee;
     text-shadow: 2px 2px 4px #8625ca;
@@ -385,6 +432,32 @@ tr:nth-child(odd) {
 }
 
 
+=======
+    font-size: 2em;
+    color: #b81f85;
+  }
+
+  #personal-goals, #accomplishments {
+    width: 30%;
+    float: left;
+    margin: 2% 2% 0 10%;
+  }
+
+  #personal-goals {
+    background-color: #e962a5;
+    padding: 2% 2% 2% 3%;
+    border: solid #8625ca;
+  }
+
+  #accomplishments {
+    background-color: #38b6ff;
+    padding: 2% 2% 2% 3%;
+    border: solid #8625ca;
+  }
+
+}
+
+>>>>>>> f2cff951a6b1acf01b480755feecc7b421e26145
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px) {
 
