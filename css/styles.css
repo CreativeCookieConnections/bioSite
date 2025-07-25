@@ -180,7 +180,13 @@ footer p {
   color: #e760ba;
   padding: 0 1em;
   clear: both;
+}
 
+.embellishment {
+  background-color: #cfdbf3;
+  border: 7px solid #38b6ff;
+  border-left: none;
+  box-shadow: 3px 3px 3px #8625ca;
 }
 
 /* Media Query for Tablet Viewport */
