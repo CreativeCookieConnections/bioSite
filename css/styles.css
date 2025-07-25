@@ -1,11 +1,11 @@
 /*
 Author: Aisha Keller
-Date: 7/5/2026
+Date: 7/5/2025
 File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, aside, figure, figcaption, section, article {
+body, header, nav, main, footer, h1, h2, div, img, ul, aside, figure, figcaption, section, article {
   margin: 0;
   padding: 0;
   border: 0;
@@ -84,12 +84,24 @@ main {
 }
 
 main h1 {
-  color: #8fb0ee;
-  text-shadow: 2px 2px 4px #8625ca;
+  font-size: 2em;
   text-align: center;
+  color: #8fb0ee;
+  border: 1px solid #8fb0ee;
+  border-radius: 2%;
+  background-color: #bb4add;
+  box-shadow: 4px 4px 6px #8625ca;
 }
 
 main h2 {
+  color: #bb4add;
+  text-shadow: 2px 2px 4px #8625ca;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 2%;
+}
+
+main h3 {
   color: #bb4add;
   text-shadow: 2px 2px 4px #8625ca;
   text-align: center;
@@ -116,11 +128,30 @@ main ul {
   margin-left: auto;
   margin-right: auto;
   border-radius: 3%;
+  border: 2px solid #38b6ff;
+  box-shadow: 2px 2px 4px #8625ca;
+}
+
+.mobile {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #8fb0ee;
+  border-radius: 2%;
+  background: #cb94db;
+  box-shadow: 2px 2px 4px #8625ca;
+  margin-top: 5%;
 }
 
 aside {
   text-align: center;
   font-weight: bold;
+}
+
+.hobbies-container p {
+  border: 2px solid #38b6ff;
+  background-color: #d6b8e9;
+  box-shadow: 4px 4px 6px #8625ca;
+  border-radius: 2%;
 }
 
 figure {
@@ -129,12 +160,17 @@ figure {
   border-radius: 2%;
   max-width: 400px;
   margin: 2% auto;
+  background: #d6b8e9;
 }
 
 figcaption {
   padding: 2%;
   border-top: 4px solid #8fb0ee;
   font-weight: bold;
+}
+
+figure img {
+  border-radius: 2%;
 }
 
 /* Style rules for footer content */
@@ -205,31 +241,38 @@ footer p {
     box-shadow: 4px 4px 6px #8625ca;
   }
 
-  .section-one, .section-two {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .container .column {
     flex: 1;
     padding: 20px;
     border: 1px solid #8fb0ee;
     border-radius: 2%;
     background: #d6b8e9;
     box-shadow: 4px 4px 6px #8625ca;
-    margin: 10px;
+    margin-top: 5%;
   }
 
-  .image1, .image2 {
-    display: block;
+  .column:nth-child(odd) {
+    background-color: #cb94db;
   }
 
   .image1 {
-    float: left;
+    margin-left: 20%;
+    margin: auto;
+    border-radius: 2%;
   }
 
   .image2 {
-    float: right;
-  }
-
-  .section-two h2 {
-    margin: auto auto auto auto;
-
+    margin-left: 20%;
+    margin: auto;
+    border-radius: 2%;
   }
 
   article {
@@ -283,6 +326,37 @@ footer p {
     box-shadow: 4px 4px 6px #8625ca;
   }
 
+  .little-lion {
+  margin-right: 95%;
+}
+
+.little-shark {
+  margin-left: 50%;
+}
+
+details {
+  color: #c56fe2;
+  text-shadow: 1px 1px 1px #470477;
+}
+
+
+/*-- Added an exciting feature to the hobby pictures. On the html page the images are clickable and expand when the mouse hovers over each image. The border also becomes a brighter blue, and the shadow box changes color. --*/
+figure:hover {
+  transform: scale(1.1);
+  border-color: #38b6ff;
+  box-shadow: 5px 5px 8px #cfdbf3;
+}
+
+/*-- Added another exciting pseudo element which styles the first letter of any p element. --*/
+p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: #c47fda;
+  text-shadow: 3px 3px 5px #470477;
+  border-radius: 20%;
+}
+
+
 /*Tablet Viewport: Style rules for table*/
 table {
   border: 3px solid #8625ca;
@@ -316,7 +390,6 @@ th {
 tr:nth-child(odd) {
   background-color: #d6b8e9;
 }
-
 }
 
 /* Media Query for Desktop Viewport */
@@ -411,6 +484,7 @@ tr:nth-child(odd) {
   }
 
 }
+
 
 
 
